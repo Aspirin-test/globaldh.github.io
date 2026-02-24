@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+<title>글로벌동향.</title>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+</head>
+<body>
+<a id="kakao-link-btn" href="javascript:;">
+<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+</a>
+<script type='text/javascript'>
+
+ //<![CDATA[
+   Kakao.init('1f70adeabec9872ca0350d993dad44a5');
+
+
+   Kakao.Link.createDefaultButton({
+     container: '#kakao-link-btn',
+     objectType: 'feed',
+     content: {
+       title: '2월 1주차 글로벌동향',
+       description: '수요 유연성 자원의 주요 편익 및 확대 동인',
+       imageUrl: 'https://iea.imgix.net/11bac30f-7522-4667-bd88-c23b127850be/Viewofpowerpolesandlineswithbuildingsandmountainsinbackground_shutterstock_2325254401.jpg',
+       link: {
+         mobileWebUrl: 'https://www.kepco.co.kr/SynapDocViewServer/viewer/doc.html?key=01c41aec7477426fbbb29b9ff2311dde&convType=img&convLocale=ko_KR&contextPath=/SynapDocViewServer',
+         webUrl: 'https://www.kepco.co.kr/SynapDocViewServer/viewer/doc.html?key=01c41aec7477426fbbb29b9ff2311dde&convType=img&convLocale=ko_KR&contextPath=/SynapDocViewServer'
+       }
+     }
+   });
+ //]]>
+</script>
+
+</body>
+</html>
